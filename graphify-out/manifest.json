@@ -1,0 +1,37 @@
+{
+  "admin.js": {
+    "mtime": 1781685749.2717655,
+    "ast_hash": "45afa4a999eb535216aee3495e4a4c34",
+    "semantic_hash": "45afa4a999eb535216aee3495e4a4c34"
+  },
+  "app.js": {
+    "mtime": 1781688832.7012446,
+    "ast_hash": "973b788b9934b53f813e403ccbf3eba7",
+    "semantic_hash": ""
+  },
+  "data.json": {
+    "mtime": 1781685701.8624437,
+    "ast_hash": "878af2c9865b1e77da37b0099fb00a2b",
+    "semantic_hash": ""
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1781685498.3063335,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1781685498.3163655,
+    "ast_hash": "637776aa6f7496d069afe7520c845c8a",
+    "semantic_hash": ""
+  },
+  "admin.html": {
+    "mtime": 1781685741.3463247,
+    "ast_hash": "995802aab6156dffa152ec009781e03b",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1781688821.5995448,
+    "ast_hash": "4bed6b122022dc3f489949f68360532d",
+    "semantic_hash": ""
+  }
+}

@@ -1,0 +1,837 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "admin.js",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "admin",
+      "community": 0,
+      "norm_label": "admin.js"
+    },
+    {
+      "label": "githubConfig",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "admin_githubconfig",
+      "community": 0,
+      "norm_label": "githubconfig"
+    },
+    {
+      "label": "sha256()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "admin_sha256",
+      "community": 0,
+      "norm_label": "sha256()"
+    },
+    {
+      "label": "showSection()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "admin_showsection",
+      "community": 0,
+      "norm_label": "showsection()"
+    },
+    {
+      "label": "loadPortfolioData()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "admin_loadportfoliodata",
+      "community": 0,
+      "norm_label": "loadportfoliodata()"
+    },
+    {
+      "label": "getBlankSchema()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "admin_getblankschema",
+      "community": 0,
+      "norm_label": "getblankschema()"
+    },
+    {
+      "label": "populateForms()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "admin_populateforms",
+      "community": 4,
+      "norm_label": "populateforms()"
+    },
+    {
+      "label": "renderListSection()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "admin_renderlistsection",
+      "community": 4,
+      "norm_label": "renderlistsection()"
+    },
+    {
+      "label": "createListItemWrapper()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L176",
+      "_origin": "ast",
+      "id": "admin_createlistitemwrapper",
+      "community": 1,
+      "norm_label": "createlistitemwrapper()"
+    },
+    {
+      "label": "renderProjectItem()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L195",
+      "_origin": "ast",
+      "id": "admin_renderprojectitem",
+      "community": 1,
+      "norm_label": "renderprojectitem()"
+    },
+    {
+      "label": "renderEducationItem()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L204",
+      "_origin": "ast",
+      "id": "admin_rendereducationitem",
+      "community": 1,
+      "norm_label": "rendereducationitem()"
+    },
+    {
+      "label": "renderAchievementItem()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L213",
+      "_origin": "ast",
+      "id": "admin_renderachievementitem",
+      "community": 1,
+      "norm_label": "renderachievementitem()"
+    },
+    {
+      "label": "renderCertificationItem()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L222",
+      "_origin": "ast",
+      "id": "admin_rendercertificationitem",
+      "community": 1,
+      "norm_label": "rendercertificationitem()"
+    },
+    {
+      "label": "renderExtraItem()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L231",
+      "_origin": "ast",
+      "id": "admin_renderextraitem",
+      "community": 1,
+      "norm_label": "renderextraitem()"
+    },
+    {
+      "label": "deleteListItem()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L241",
+      "_origin": "ast",
+      "id": "admin_deletelistitem",
+      "community": 4,
+      "norm_label": "deletelistitem()"
+    },
+    {
+      "label": "updateSyncStatus()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "admin_updatesyncstatus",
+      "community": 4,
+      "norm_label": "updatesyncstatus()"
+    },
+    {
+      "label": "parseCsvSkills()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L307",
+      "_origin": "ast",
+      "id": "admin_parsecsvskills",
+      "community": 0,
+      "norm_label": "parsecsvskills()"
+    },
+    {
+      "label": "openModal()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L320",
+      "_origin": "ast",
+      "id": "admin_openmodal",
+      "community": 2,
+      "norm_label": "openmodal()"
+    },
+    {
+      "label": "openProjectModal()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L340",
+      "_origin": "ast",
+      "id": "admin_openprojectmodal",
+      "community": 2,
+      "norm_label": "openprojectmodal()"
+    },
+    {
+      "label": "openEducationModal()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L407",
+      "_origin": "ast",
+      "id": "admin_openeducationmodal",
+      "community": 2,
+      "norm_label": "openeducationmodal()"
+    },
+    {
+      "label": "openAchievementModal()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L464",
+      "_origin": "ast",
+      "id": "admin_openachievementmodal",
+      "community": 2,
+      "norm_label": "openachievementmodal()"
+    },
+    {
+      "label": "openCertificationModal()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L501",
+      "_origin": "ast",
+      "id": "admin_opencertificationmodal",
+      "community": 2,
+      "norm_label": "opencertificationmodal()"
+    },
+    {
+      "label": "openExtraModal()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L543",
+      "_origin": "ast",
+      "id": "admin_openextramodal",
+      "community": 2,
+      "norm_label": "openextramodal()"
+    },
+    {
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app",
+      "community": 3,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "populatePortfolio()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "app_populateportfolio",
+      "community": 3,
+      "norm_label": "populateportfolio()"
+    },
+    {
+      "label": "renderProjects()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "app_renderprojects",
+      "community": 3,
+      "norm_label": "renderprojects()"
+    },
+    {
+      "label": "setupProjectFilters()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L318",
+      "_origin": "ast",
+      "id": "app_setupprojectfilters",
+      "community": 3,
+      "norm_label": "setupprojectfilters()"
+    },
+    {
+      "label": "initThreeAnimation()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L375",
+      "_origin": "ast",
+      "id": "app_initthreeanimation",
+      "community": 3,
+      "norm_label": "initthreeanimation()"
+    },
+    {
+      "label": "initScrollReveal()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L509",
+      "_origin": "ast",
+      "id": "app_initscrollreveal",
+      "community": 3,
+      "norm_label": "initscrollreveal()"
+    },
+    {
+      "label": "showFallbackLoading()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L527",
+      "_origin": "ast",
+      "id": "app_showfallbackloading",
+      "community": 3,
+      "norm_label": "showfallbackloading()"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rules_graphify",
+      "community": 5,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "rules_graphify_graphify",
+      "community": 5,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "workflows_graphify",
+      "community": 6,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "Workflow: graphify",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "workflows_graphify_workflow_graphify",
+      "community": 6,
+      "norm_label": "workflow: graphify"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L176",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_createlistitemwrapper"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L241",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_deletelistitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_getblankschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_githubconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_loadportfoliodata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L464",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_openachievementmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L501",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_opencertificationmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L407",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_openeducationmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L543",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_openextramodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L320",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_openmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L340",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_openprojectmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L307",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_parsecsvskills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_populateforms"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L213",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_renderachievementitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L222",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_rendercertificationitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L204",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_rendereducationitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_renderextraitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_renderlistsection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L195",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_renderprojectitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_sha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_showsection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L250",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin",
+      "target": "admin_updatesyncstatus"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L244",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_deletelistitem",
+      "target": "admin_populateforms"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_populateforms",
+      "target": "admin_renderlistsection"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L214",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_renderachievementitem",
+      "target": "admin_createlistitemwrapper"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L223",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_rendercertificationitem",
+      "target": "admin_createlistitemwrapper"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L205",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_rendereducationitem",
+      "target": "admin_createlistitemwrapper"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L232",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_renderextraitem",
+      "target": "admin_createlistitemwrapper"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L196",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_renderprojectitem",
+      "target": "admin_createlistitemwrapper"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_deletelistitem",
+      "target": "admin_updatesyncstatus"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L481",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_openachievementmodal",
+      "target": "admin_openmodal"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L522",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_opencertificationmodal",
+      "target": "admin_openmodal"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L437",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_openeducationmodal",
+      "target": "admin_openmodal"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L560",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_openextramodal",
+      "target": "admin_openmodal"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L378",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "admin_openprojectmodal",
+      "target": "admin_openmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L509",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_initscrollreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L368",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app",
+      "target": "app_initthreeanimation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app",
+      "target": "app_populateportfolio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L248",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app",
+      "target": "app_renderprojects"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app",
+      "target": "app_setupprojectfilters"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L507",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app",
+      "target": "app_showfallbackloading"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_populateportfolio",
+      "target": "app_renderprojects"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L183",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_populateportfolio",
+      "target": "app_setupprojectfilters"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L525",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_showfallbackloading",
+      "target": "app_populateportfolio"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L313",
+      "weight": 1.0,
+      "source": "app_renderprojects",
+      "target": "app_initscrollreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "rules_graphify",
+      "target": "rules_graphify_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "workflows_graphify",
+      "target": "workflows_graphify_workflow_graphify",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,107 @@
+{
+  "communities": {
+    "0": [
+      "admin",
+      "admin_getblankschema",
+      "admin_githubconfig",
+      "admin_loadportfoliodata",
+      "admin_parsecsvskills",
+      "admin_sha256",
+      "admin_showsection"
+    ],
+    "1": [
+      "admin_createlistitemwrapper",
+      "admin_renderachievementitem",
+      "admin_rendercertificationitem",
+      "admin_rendereducationitem",
+      "admin_renderextraitem",
+      "admin_renderprojectitem"
+    ],
+    "2": [
+      "admin_openachievementmodal",
+      "admin_opencertificationmodal",
+      "admin_openeducationmodal",
+      "admin_openextramodal",
+      "admin_openmodal",
+      "admin_openprojectmodal"
+    ],
+    "3": [
+      "app",
+      "app_initthreeanimation",
+      "app_populateportfolio",
+      "app_renderprojects",
+      "app_setupprojectfilters",
+      "app_showfallbackloading"
+    ],
+    "4": [
+      "admin_deletelistitem",
+      "admin_populateforms",
+      "admin_renderlistsection",
+      "admin_updatesyncstatus"
+    ]
+  },
+  "cohesion": {
+    "0": 0.2857142857142857,
+    "1": 0.3333333333333333,
+    "2": 0.3333333333333333,
+    "3": 0.5333333333333333,
+    "4": 0.5
+  },
+  "gods": [
+    {
+      "id": "admin_createlistitemwrapper",
+      "label": "createListItemWrapper()",
+      "degree": 6
+    },
+    {
+      "id": "admin_openmodal",
+      "label": "openModal()",
+      "degree": 6
+    },
+    {
+      "id": "app_populateportfolio",
+      "label": "populatePortfolio()",
+      "degree": 4
+    },
+    {
+      "id": "admin_populateforms",
+      "label": "populateForms()",
+      "degree": 3
+    },
+    {
+      "id": "admin_deletelistitem",
+      "label": "deleteListItem()",
+      "degree": 3
+    },
+    {
+      "id": "admin_renderlistsection",
+      "label": "renderListSection()",
+      "degree": 2
+    },
+    {
+      "id": "admin_renderprojectitem",
+      "label": "renderProjectItem()",
+      "degree": 2
+    },
+    {
+      "id": "admin_rendereducationitem",
+      "label": "renderEducationItem()",
+      "degree": 2
+    },
+    {
+      "id": "admin_renderachievementitem",
+      "label": "renderAchievementItem()",
+      "degree": 2
+    },
+    {
+      "id": "admin_rendercertificationitem",
+      "label": "renderCertificationItem()",
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

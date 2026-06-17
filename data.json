@@ -1,0 +1,129 @@
+{
+  "personal": {
+    "name": "Thamatam Jayaraj",
+    "title": "B.Tech Computer Science (Data Science) Student",
+    "email": "jayarajthamatam123@gmail.com",
+    "phone": "+91-9391217676",
+    "location": "Hyderabad, India",
+    "bio": "Passionate Computer Science student specializing in Data Science and Full Stack Development. Experienced in building AI-powered applications, machine learning workflows, and interactive web platforms. Dedicated to solving complex engineering problems and delivering modern, scalable solutions.",
+    "avatarUrl": "images/profile.png",
+    "links": {
+      "github": "https://github.com/jayaraj0304",
+      "linkedin": "https://linkedin.com/in/jayaraj-thamatam",
+      "leetcode": "https://leetcode.com/jayaraj0304"
+    }
+  },
+  "education": [
+    {
+      "institution": "VNR Vignana Jyothi Institute of Engineering and Technology",
+      "degree": "Bachelor of Technology - Computer Science - Data Science",
+      "location": "Hyderabad, India",
+      "duration": "2024 - 2027",
+      "grade": "CGPA: 8.35"
+    },
+    {
+      "institution": "Andhra Polytechnic",
+      "degree": "Diploma in Computer Science Engineering",
+      "location": "Kakinada, India",
+      "duration": "2021 - 2024",
+      "grade": "CGPA: 8.33"
+    }
+  ],
+  "skills": {
+    "programmingLanguages": ["Java", "Python", "C", "C++"],
+    "frameworksAndLibraries": ["React.js", "Next.js", "Tailwind CSS", "Node.js", "Express.js"],
+    "machineLearning": ["Supervised Learning", "Unsupervised Learning", "Model Training", "Model Evaluation", "Feature Engineering"],
+    "databases": ["MongoDB", "MySQL", "Firebase", "Supabase"],
+    "toolsAndPlatforms": ["Git", "GitHub", "VS Code", "Power BI", "Tableau"],
+    "designTools": ["Figma", "Canva"],
+    "academicCoursework": ["Data Structures", "DBMS", "Operating Systems", "Computer Networks", "OOPS"],
+    "softSkills": ["Leadership", "Event Management", "Creativity", "Task Prioritization"]
+  },
+  "projects": [
+    {
+      "id": "ai-recruiter",
+      "title": "AI Recruiter – Automated Hiring Platform",
+      "description": "Built an AI-driven recruitment platform with automated resume parsing and candidate shortlisting to reduce HR workload and speed hiring. Orchestrated multimodal interviews using Gemini and Vapi and deployed a low-latency Supabase system.",
+      "tags": ["AI/ML", "Full Stack", "Supabase", "Gemini API"],
+      "githubUrl": "https://github.com/jayaraj0304",
+      "liveUrl": "",
+      "imageUrl": "images/project-default.png"
+    },
+    {
+      "id": "mysql-chat-ai",
+      "title": "MySQL Chat AI Assistant",
+      "description": "Developed an interactive MySQL chatbot, connecting to live databases and interpreting user prompts to generate SQL queries, displaying results instantly and improving non-technical user database accessibility. The project contains under 1000 lines of code.",
+      "tags": ["AI/ML", "Database", "Node.js", "SQL"],
+      "githubUrl": "https://github.com/jayaraj0304",
+      "liveUrl": "",
+      "imageUrl": "images/project-default.png"
+    },
+    {
+      "id": "saarthi-doc-intel",
+      "title": "Saarthi – Smart Document Intelligence Assistant",
+      "description": "Engineered an AI document assistant with OCR, translation, summarization, and metadata extraction. Developed bilingual Q&A using LangChain and Gemini, automated workflows with n8n, and integrated low-latency semantic search using Supabase pgvector for efficient RAG.",
+      "tags": ["AI/ML", "RAG", "LangChain", "n8n"],
+      "githubUrl": "https://github.com/jayaraj0304",
+      "liveUrl": "",
+      "imageUrl": "images/project-default.png"
+    },
+    {
+      "id": "ecogamify",
+      "title": "EcoGamify – Gamified Learning Platform",
+      "description": "Created a gamified environmental learning platform using Next.js, TypeScript, Three.js, 3D models, and GSAP. Designed multi-level educational games with policy simulation, coding challenges, and interactive conservation experiences.",
+      "tags": ["Web Dev", "Frontend", "Three.js", "GSAP", "TypeScript"],
+      "githubUrl": "https://github.com/jayaraj0304",
+      "liveUrl": "",
+      "imageUrl": "images/project-default.png"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "HackRevolution – 2nd Place",
+      "description": "Secured second place in an inter-college hackathon by developing a gamified e-learning platform with interactive lessons, strong user engagement, and notable technical innovation."
+    },
+    {
+      "title": "SIH Hackathon Winner",
+      "description": "Won the institute round and qualified for Smart India Hackathon 2025 finals, delivering impactful innovative solutions collaboratively."
+    },
+    {
+      "title": "Hacktoberfest Super Contributor",
+      "description": "Made 10+ valuable pull requests to major open-source organization repositories, contributing meaningful improvements and earning official Hacktoberfest swags."
+    },
+    {
+      "title": "Top 9 National Rank",
+      "description": "Secured 9th place in Tutedude’s Web Development Hackathon 1.0 for StallOS project, showcasing advanced web development expertise and creativity."
+    },
+    {
+      "title": "LeetCode Ranking",
+      "description": "Achieved a contest ranking of 1619, placing in the top 15% of global participants."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI Professional",
+      "issuer": "Oracle",
+      "description": "Earned certification in OCI Generative AI, demonstrating expertise in model deployment, prompt engineering, and secure cloud-based AI solutions."
+    },
+    {
+      "name": "Smart Coder in DSA",
+      "issuer": "Smart Interviews",
+      "description": "Completed the Smart Coder program, gaining strong foundations in Data Structures and Algorithms through rigorous practice and structured learning."
+    },
+    {
+      "name": "MERN Stack Certification",
+      "issuer": "Apna College",
+      "description": "Completed a comprehensive MERN Stack program covering MongoDB, Express, React, and Node.js with hands-on projects and full-stack development practices."
+    }
+  ],
+  "extracurriculars": [
+    {
+      "title": "Roland Octapad SPD-30",
+      "description": "Perform and practice rhythmic compositions on the Roland Octapad SPD-30, demonstrating discipline, coordination, and creative expression."
+    },
+    {
+      "title": "Hackathons & Innovation",
+      "description": "Actively participate in technical hackathons, collaborating in teams to build innovative solutions under time constraints."
+    }
+  ]
+}

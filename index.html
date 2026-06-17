@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Thamatam Jayaraj | Portfolio - Data Science & Full Stack Engineering</title>
+  <meta name="description" content="Portfolio of Thamatam Jayaraj, B.Tech Computer Science (Data Science) student at VNR VJIET. Showcasing AI Recruiter, MySQL Chat Assistant, Saarthi RAG app, and skills in React, Next.js, ML, and databases.">
+  <meta name="keywords" content="Thamatam Jayaraj, Portfolio, Engineering Graduate, Data Science, Computer Science, VNR VJIET, React Developer, Full Stack Developer, AI Recruiter, Machine Learning Engineer, Hyderabad, India">
+  <meta name="author" content="Thamatam Jayaraj">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/jayaraj0304">
+  <meta property="og:title" content="Thamatam Jayaraj | Engineering & Data Science Portfolio">
+  <meta property="og:description" content="Explore the portfolio of Thamatam Jayaraj. Showcasing machine learning applications, document intelligence bots, and web interfaces.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/101891963?v=4"> <!-- Default profile image fallback -->
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Thamatam Jayaraj | Engineering & Data Science Portfolio">
+  <meta property="twitter:description" content="Explore the projects and engineering accomplishments of Thamatam Jayaraj.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Three.js Library for 3D Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Structured Data / JSON-LD for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thamatam Jayaraj",
+    "jobTitle": "Data Scientist & Software Engineer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "VNR Vignana Jyothi Institute of Engineering and Technology"
+    },
+    "email": "jayarajthamatam123@gmail.com",
+    "telephone": "+91-9391217676",
+    "url": "https://github.com/jayaraj0304",
+    "sameAs": [
+      "https://github.com/jayaraj0304",
+      "https://linkedin.com/in/jayaraj-thamatam"
+    ],
+    "knowsAbout": [
+      "Computer Science",
+      "Data Science",
+      "Machine Learning",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Supabase",
+      "Generative AI"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="logo">Jayaraj<span>Thamatam</span></a>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <!-- Interactive Three.js background canvas -->
+    <canvas id="three-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; opacity: 0.4;"></canvas>
+
+    <div class="container hero-grid" style="position: relative; z-index: 1;">
+      <div class="hero-content">
+        <div class="badge">Available for Internships & Full-time Roles</div>
+        <h1 class="hero-title">Hi, I'm <span id="hero-name">Thamatam Jayaraj</span></h1>
+        <p class="hero-tagline" id="hero-title-text">B.Tech Computer Science - Data Science Student</p>
+        <p class="hero-desc" id="hero-bio">Loading profile details...</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-avatar-container">
+          <div class="profile-avatar-inner">
+            <img id="profile-img" src="images/profile.png" alt="Thamatam Jayaraj" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic foundations and credentials in Computer Science and Engineering.</p>
+      </div>
+      <div class="timeline-grid">
+        <div class="timeline" id="education-timeline">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" style="background: rgba(30, 41, 59, 0.2);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">A compilation of technical expertise, programming environments, and frameworks.</p>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Showcasing technical problem-solving capabilities, machine learning algorithms, and web applications.</p>
+      </div>
+      
+      <!-- Filter Tags -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="AI/ML">AI & ML</button>
+        <button class="filter-btn" data-filter="Web Dev">Web Development</button>
+        <button class="filter-btn" data-filter="Database">Databases</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="certifications-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-subtitle">Recognition, hackathons, and open-source contributions.</p>
+      </div>
+      <div class="achievements-grid" id="achievements-grid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional verification and specialized credentials.</p>
+      </div>
+      <div class="certs-grid" id="certs-grid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Extracurriculars Section -->
+  <section id="extracurriculars" style="background: rgba(30, 41, 59, 0.2);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Extracurricular Activities</h2>
+        <p class="section-subtitle">Interests and activities outside academic coursework.</p>
+      </div>
+      <div class="extras-grid" id="extras-grid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Feel free to reach out for internship opportunities, collaborations, or professional chats.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I am always open to exploring new technical challenges, research collaborations, or full-stack software development roles. Let's connect!
+          </p>
+          
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <div><a href="mailto:jayarajthamatam123@gmail.com" class="link-email contact-value">jayarajthamatam123@gmail.com</a></div>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <div><a href="tel:+919391217676" class="link-phone contact-value">+91-9391217676</a></div>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <div id="contact-location" class="contact-value">Hyderabad, India</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" target="_blank" class="social-icon link-linkedin" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" class="social-icon link-github" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="social-icon link-leetcode" aria-label="LeetCode Profile"><i class="fas fa-code"></i></a>
+          </div>
+        </div>
+        
+        <form id="contact-form" class="contact-form reveal">
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Full Name</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email Address</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="yourname@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" class="form-input" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 <span id="footer-name">Thamatam Jayaraj</span>. All Rights Reserved.</p>
+      <a href="./admin.html" class="admin-link"><i class="fas fa-lock-open"></i> Admin Access</a>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

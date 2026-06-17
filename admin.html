@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Admin Dashboard</title>
+  
+  <!-- Primary CSS Styles -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-body">
+
+  <!-- Admin Page Header -->
+  <header class="admin-header">
+    <div class="container admin-nav">
+      <a href="./index.html" class="logo"><i class="fas fa-arrow-left" style="font-size: 1.1rem; vertical-align: middle; margin-right: 8px;"></i>Jayaraj<span>Dashboard</span></a>
+      <span style="font-family: var(--font-heading); font-size: 0.9rem; color: var(--text-muted);">Secure Control Panel</span>
+    </div>
+  </header>
+
+  <div class="container" style="padding-top: 100px;">
+    
+    <!-- 1. Password Login Prompt Section -->
+    <section id="login-section" style="padding: 40px 0;">
+      <div class="admin-login-card">
+        <div style="text-align: center; margin-bottom: 30px;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(52, 211, 153, 0.1); color: var(--accent-primary); display: inline-flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 16px;">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h2 style="font-family: var(--font-heading);">Admin Login</h2>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Enter your admin dashboard password</p>
+        </div>
+        
+        <form id="login-form">
+          <div class="form-group">
+            <label for="password-input" class="form-label">Password</label>
+            <input type="password" id="password-input" class="form-input" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Unlock Dashboard</button>
+          <div id="login-error" class="form-status error" style="margin-top: 16px; text-align: center; display: none;"></div>
+        </form>
+        
+        <div style="text-align: center; margin-top: 24px; font-size: 0.85rem; color: var(--text-muted)">
+          <p>Default password: <code style="color: var(--accent-secondary); background: rgba(129, 140, 248, 0.1); padding: 2px 6px; border-radius: 4px;">admin123</code></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Admin Dashboard Console (Initially Hidden) -->
+    <div id="admin-panel" style="display: none;">
+      
+      <!-- Synchronization and Sync State Bar -->
+      <div class="sync-bar">
+        <div class="sync-status" id="sync-status">
+          <span></span>
+          <b>Synced with data.json</b>
+        </div>
+        
+        <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+          <!-- GitHub Commit Option -->
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <input type="password" id="gh-token" class="form-input" placeholder="GitHub PAT Token" style="padding: 8px 12px; font-size: 0.85rem; width: 180px;">
+            <button class="btn btn-secondary" id="gh-commit-btn" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fab fa-github"></i> Commit to GitHub</button>
+          </div>
+          
+          <button class="btn btn-primary" id="export-json-btn" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fas fa-file-download"></i> Save & Download JSON</button>
+          <button class="btn btn-accent" id="logout-btn" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+      </div>
+
+      <!-- Main Dashboard Grid Layout -->
+      <div class="dashboard-grid">
+        
+        <!-- Tab Navigation Sidebar -->
+        <aside class="admin-sidebar">
+          <button class="sidebar-tab active" data-tab="personal"><i class="fas fa-user-circle"></i> Personal Details</button>
+          <button class="sidebar-tab" data-tab="education"><i class="fas fa-graduation-cap"></i> Education</button>
+          <button class="sidebar-tab" data-tab="skills"><i class="fas fa-laptop-code"></i> Skills Summary</button>
+          <button class="sidebar-tab" data-tab="projects"><i class="fas fa-project-diagram"></i> Projects</button>
+          <button class="sidebar-tab" data-tab="achievements"><i class="fas fa-award"></i> Achievements</button>
+          <button class="sidebar-tab" data-tab="certifications"><i class="fas fa-certificate"></i> Certifications</button>
+          <button class="sidebar-tab" data-tab="extracurriculars"><i class="fas fa-drum"></i> Extracurriculars</button>
+          <button class="sidebar-tab" data-tab="password-utility"><i class="fas fa-key"></i> Password Settings</button>
+        </aside>
+
+        <!-- Administrative Content Editing Card -->
+        <main class="admin-content-card">
+          
+          <!-- Edit Personal Details Section -->
+          <div class="admin-section active" id="section-personal">
+            <div class="admin-section-header">
+              <h3>Personal Details</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Basic information and socials displayed in the Hero and Contact sections.</p>
+            </div>
+            
+            <form id="personal-form">
+              <div class="form-group">
+                <label for="edit-name" class="form-label">Full Name</label>
+                <input type="text" id="edit-name" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="edit-title" class="form-label">Professional Subtitle</label>
+                <input type="text" id="edit-title" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="edit-bio" class="form-label">Professional Biography</label>
+                <textarea id="edit-bio" class="form-input" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="edit-avatar" class="form-label">Profile Image URL</label>
+                <input type="text" id="edit-avatar" class="form-input">
+              </div>
+              
+              <h4 style="margin: 32px 0 16px 0; font-family: var(--font-heading); border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">Contact & Social Info</h4>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group">
+                  <label for="edit-email" class="form-label">Email Address</label>
+                  <input type="email" id="edit-email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="edit-phone" class="form-label">Mobile Number</label>
+                  <input type="text" id="edit-phone" class="form-input" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="edit-location" class="form-label">Location (City, Country)</label>
+                <input type="text" id="edit-location" class="form-input" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="edit-github" class="form-label">GitHub URL</label>
+                <input type="url" id="edit-github" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="edit-linkedin" class="form-label">LinkedIn URL</label>
+                <input type="url" id="edit-linkedin" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="edit-leetcode" class="form-label">LeetCode URL</label>
+                <input type="url" id="edit-leetcode" class="form-input">
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="margin-top: 16px;">Update Session Details</button>
+            </form>
+          </div>
+
+          <!-- Edit Education Section -->
+          <div class="admin-section" id="section-education">
+            <div class="admin-section-header">
+              <h3>Education History</h3>
+              <button class="btn btn-primary" id="add-education-btn" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fas fa-plus"></i> Add Entry</button>
+            </div>
+            
+            <div id="list-education">
+              <!-- Dynamically populated list -->
+            </div>
+          </div>
+
+          <!-- Edit Skills Summary Section -->
+          <div class="admin-section" id="section-skills">
+            <div class="admin-section-header">
+              <h3>Technical & Core Skills</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Input skills as comma-separated lists (e.g. Java, Python, C++).</p>
+            </div>
+            
+            <form id="skills-form">
+              <div class="form-group">
+                <label for="skills-programmingLanguages" class="form-label">Programming Languages</label>
+                <input type="text" id="skills-programmingLanguages" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="skills-frameworksAndLibraries" class="form-label">Frameworks & Libraries</label>
+                <input type="text" id="skills-frameworksAndLibraries" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="skills-machineLearning" class="form-label">Machine Learning</label>
+                <input type="text" id="skills-machineLearning" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="skills-databases" class="form-label">Databases</label>
+                <input type="text" id="skills-databases" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="skills-toolsAndPlatforms" class="form-label">Tools & Platforms</label>
+                <input type="text" id="skills-toolsAndPlatforms" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="skills-designTools" class="form-label">Design Tools</label>
+                <input type="text" id="skills-designTools" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="skills-academicCoursework" class="form-label">Academic Coursework</label>
+                <input type="text" id="skills-academicCoursework" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="skills-softSkills" class="form-label">Soft Skills</label>
+                <input type="text" id="skills-softSkills" class="form-input">
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="margin-top: 16px;">Update Session Skills</button>
+            </form>
+          </div>
+
+          <!-- Edit Projects Section -->
+          <div class="admin-section" id="section-projects">
+            <div class="admin-section-header">
+              <h3>Featured Projects</h3>
+              <button class="btn btn-primary" id="add-project-btn" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fas fa-plus"></i> Add Project</button>
+            </div>
+            
+            <div id="list-projects">
+              <!-- Dynamically populated list -->
+            </div>
+          </div>
+
+          <!-- Edit Achievements Section -->
+          <div class="admin-section" id="section-achievements">
+            <div class="admin-section-header">
+              <h3>Achievements & Awards</h3>
+              <button class="btn btn-primary" id="add-ach-btn" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fas fa-plus"></i> Add Entry</button>
+            </div>
+            
+            <div id="list-achievements">
+              <!-- Dynamically populated list -->
+            </div>
+          </div>
+
+          <!-- Edit Certifications Section -->
+          <div class="admin-section" id="section-certifications">
+            <div class="admin-section-header">
+              <h3>Certifications & Verification</h3>
+              <button class="btn btn-primary" id="add-cert-btn" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fas fa-plus"></i> Add Entry</button>
+            </div>
+            
+            <div id="list-certifications">
+              <!-- Dynamically populated list -->
+            </div>
+          </div>
+
+          <!-- Edit Extracurriculars Section -->
+          <div class="admin-section" id="section-extracurriculars">
+            <div class="admin-section-header">
+              <h3>Extracurricular Activities</h3>
+              <button class="btn btn-primary" id="add-extra-btn" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fas fa-plus"></i> Add Entry</button>
+            </div>
+            
+            <div id="list-extracurriculars">
+              <!-- Dynamically populated list -->
+            </div>
+          </div>
+
+          <!-- Password Settings Section -->
+          <div class="admin-section" id="section-password-utility">
+            <div class="admin-section-header">
+              <h3>Admin Password Configuration</h3>
+            </div>
+            
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">
+              The dashboard uses SHA-256 for secure client-side login verification. If you would like to change your login password from the default <code style="color: var(--accent-secondary)">admin123</code>, enter a new password below, generate the cryptographic hash, and paste the hash into <code style="color: var(--accent-secondary)">admin.js</code> on line 2 as <code style="color: var(--accent-secondary)">DEFAULT_PASSWORD_HASH</code>.
+            </p>
+            
+            <form id="pass-gen-form">
+              <div class="form-group">
+                <label for="new-pass-val" class="form-label">New Password Value</label>
+                <input type="text" id="new-pass-val" class="form-input" placeholder="e.g. MySuperSecretPass!" required>
+              </div>
+              <button type="submit" class="btn btn-accent">Generate Cryptographic Hash</button>
+            </form>
+            
+            <div id="generated-hash-box" style="margin-top: 24px; display: none; background: #0f172a; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
+              <label class="form-label" style="color: var(--accent-primary)">Generated SHA-256 Hash</label>
+              <input type="text" id="generated-hash" class="form-input" style="font-family: monospace; font-size: 0.85rem; letter-spacing: 0.05em; background: #1e293b;" readonly>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px;">
+                Replace the hash at the top of <a href="file:///c:/Users/jayar/Documents/GitHub/Portifilio/admin.js" target="_blank" style="color: var(--accent-secondary)">admin.js</a> with this generated text.
+              </p>
+            </div>
+          </div>
+          
+        </main>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CRUD Modal Overlay -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-card">
+      <button class="close-modal" id="close-modal"><i class="fas fa-times"></i></button>
+      <div id="modal-container">
+        <!-- Form elements rendered dynamically by admin.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Script Logic -->
+  <script src="./admin.js"></script>
+</body>
+</html>
