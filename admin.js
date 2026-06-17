@@ -7,7 +7,7 @@ let currentTab = 'personal';
 let githubConfig = {
   token: localStorage.getItem('gh_token') || '',
   username: 'jayaraj0304',
-  repo: 'Portifilio',
+  repo: 'Portifolio-Live',
   branch: 'main'
 };
 let isModified = false;
