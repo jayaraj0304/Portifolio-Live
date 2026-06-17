@@ -30,22 +30,69 @@
     }
   ],
   "skills": {
-    "programmingLanguages": ["Java", "Python", "C", "C++"],
-    "frameworksAndLibraries": ["React.js", "Next.js", "Tailwind CSS", "Node.js", "Express.js"],
-    "machineLearning": ["Supervised Learning", "Unsupervised Learning", "Model Training", "Model Evaluation", "Feature Engineering"],
-    "databases": ["MongoDB", "MySQL", "Firebase", "Supabase"],
-    "toolsAndPlatforms": ["Git", "GitHub", "VS Code", "Power BI", "Tableau"],
-    "designTools": ["Figma", "Canva"],
-    "academicCoursework": ["Data Structures", "DBMS", "Operating Systems", "Computer Networks", "OOPS"],
-    "softSkills": ["Leadership", "Event Management", "Creativity", "Task Prioritization"]
+    "programmingLanguages": [
+      "Java",
+      "Python",
+      "C",
+      "C++"
+    ],
+    "frameworksAndLibraries": [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js"
+    ],
+    "machineLearning": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Model Training",
+      "Model Evaluation",
+      "Feature Engineering"
+    ],
+    "databases": [
+      "MongoDB",
+      "MySQL",
+      "Firebase",
+      "Supabase"
+    ],
+    "toolsAndPlatforms": [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Power BI",
+      "Tableau"
+    ],
+    "designTools": [
+      "Figma",
+      "Canva"
+    ],
+    "academicCoursework": [
+      "Data Structures",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks",
+      "OOPS"
+    ],
+    "softSkills": [
+      "Leadership",
+      "Event Management",
+      "Creativity",
+      "Task Prioritization"
+    ]
   },
   "projects": [
     {
       "id": "ai-recruiter",
       "title": "AI Recruiter – Automated Hiring Platform",
       "description": "Built an AI-driven recruitment platform with automated resume parsing and candidate shortlisting to reduce HR workload and speed hiring. Orchestrated multimodal interviews using Gemini and Vapi and deployed a low-latency Supabase system.",
-      "tags": ["AI/ML", "Full Stack", "Supabase", "Gemini API"],
-      "githubUrl": "https://github.com/jayaraj0304",
+      "tags": [
+        "AI/ML",
+        "Full Stack",
+        "Supabase",
+        "Gemini API"
+      ],
+      "githubUrl": "https://github.com/jayaraj0304/Ai-Recruiter-app",
       "liveUrl": "",
       "imageUrl": "images/project-default.png"
     },
@@ -53,7 +100,12 @@
       "id": "mysql-chat-ai",
       "title": "MySQL Chat AI Assistant",
       "description": "Developed an interactive MySQL chatbot, connecting to live databases and interpreting user prompts to generate SQL queries, displaying results instantly and improving non-technical user database accessibility. The project contains under 1000 lines of code.",
-      "tags": ["AI/ML", "Database", "Node.js", "SQL"],
+      "tags": [
+        "AI/ML",
+        "Database",
+        "Node.js",
+        "SQL"
+      ],
       "githubUrl": "https://github.com/jayaraj0304",
       "liveUrl": "",
       "imageUrl": "images/project-default.png"
@@ -62,7 +114,12 @@
       "id": "saarthi-doc-intel",
       "title": "Saarthi – Smart Document Intelligence Assistant",
       "description": "Engineered an AI document assistant with OCR, translation, summarization, and metadata extraction. Developed bilingual Q&A using LangChain and Gemini, automated workflows with n8n, and integrated low-latency semantic search using Supabase pgvector for efficient RAG.",
-      "tags": ["AI/ML", "RAG", "LangChain", "n8n"],
+      "tags": [
+        "AI/ML",
+        "RAG",
+        "LangChain",
+        "n8n"
+      ],
       "githubUrl": "https://github.com/jayaraj0304",
       "liveUrl": "",
       "imageUrl": "images/project-default.png"
@@ -71,7 +128,13 @@
       "id": "ecogamify",
       "title": "EcoGamify – Gamified Learning Platform",
       "description": "Created a gamified environmental learning platform using Next.js, TypeScript, Three.js, 3D models, and GSAP. Designed multi-level educational games with policy simulation, coding challenges, and interactive conservation experiences.",
-      "tags": ["Web Dev", "Frontend", "Three.js", "GSAP", "TypeScript"],
+      "tags": [
+        "Web Dev",
+        "Frontend",
+        "Three.js",
+        "GSAP",
+        "TypeScript"
+      ],
       "githubUrl": "https://github.com/jayaraj0304",
       "liveUrl": "",
       "imageUrl": "images/project-default.png"
