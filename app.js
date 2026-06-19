@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Fetch portfolio data and render
-  fetch('./data.json')
+  fetch(`./data.json?t=${Date.now()}`)
     .then(response => {
       if (!response.ok) {
         throw new Error('Failed to fetch portfolio data');

@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Load Data
   function loadPortfolioData() {
-    fetch('./data.json')
+    fetch(`./data.json?t=${Date.now()}`)
       .then(res => res.json())
       .then(data => {
         portfolioData = data;

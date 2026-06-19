@@ -164,20 +164,40 @@
       "norm_label": "updatesyncstatus()"
     },
     {
+      "label": "savePersonalDetails()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L273",
+      "_origin": "ast",
+      "id": "admin_savepersonaldetails",
+      "community": 0,
+      "norm_label": "savepersonaldetails()"
+    },
+    {
+      "label": "saveSkills()",
+      "file_type": "code",
+      "source_file": "admin.js",
+      "source_location": "L302",
+      "_origin": "ast",
+      "id": "admin_saveskills",
+      "community": 7,
+      "norm_label": "saveskills()"
+    },
+    {
       "label": "parseCsvSkills()",
       "file_type": "code",
       "source_file": "admin.js",
-      "source_location": "L316",
+      "source_location": "L341",
       "_origin": "ast",
       "id": "admin_parsecsvskills",
-      "community": 0,
+      "community": 7,
       "norm_label": "parsecsvskills()"
     },
     {
       "label": "openModal()",
       "file_type": "code",
       "source_file": "admin.js",
-      "source_location": "L329",
+      "source_location": "L354",
       "_origin": "ast",
       "id": "admin_openmodal",
       "community": 2,
@@ -187,7 +207,7 @@
       "label": "openProjectModal()",
       "file_type": "code",
       "source_file": "admin.js",
-      "source_location": "L349",
+      "source_location": "L374",
       "_origin": "ast",
       "id": "admin_openprojectmodal",
       "community": 2,
@@ -197,7 +217,7 @@
       "label": "openEducationModal()",
       "file_type": "code",
       "source_file": "admin.js",
-      "source_location": "L416",
+      "source_location": "L441",
       "_origin": "ast",
       "id": "admin_openeducationmodal",
       "community": 2,
@@ -207,7 +227,7 @@
       "label": "openAchievementModal()",
       "file_type": "code",
       "source_file": "admin.js",
-      "source_location": "L473",
+      "source_location": "L498",
       "_origin": "ast",
       "id": "admin_openachievementmodal",
       "community": 2,
@@ -217,7 +237,7 @@
       "label": "openCertificationModal()",
       "file_type": "code",
       "source_file": "admin.js",
-      "source_location": "L510",
+      "source_location": "L535",
       "_origin": "ast",
       "id": "admin_opencertificationmodal",
       "community": 2,
@@ -227,7 +247,7 @@
       "label": "openExtraModal()",
       "file_type": "code",
       "source_file": "admin.js",
-      "source_location": "L552",
+      "source_location": "L577",
       "_origin": "ast",
       "id": "admin_openextramodal",
       "community": 2,
@@ -539,6 +559,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "admin.js",
+      "source_location": "L273",
+      "weight": 1.0,
+      "source": "admin",
+      "target": "admin_savepersonaldetails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "admin",
+      "target": "admin_saveskills",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
       "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -652,6 +692,17 @@
       "confidence_score": 1.0,
       "source": "admin_deletelistitem",
       "target": "admin_updatesyncstatus"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin.js",
+      "source_location": "L306",
+      "weight": 1.0,
+      "source": "admin_saveskills",
+      "target": "admin_parsecsvskills",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -834,5 +885,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8adc0cef7c3e80794d50160a2afe9bdf3d6935ac"
+  "built_at_commit": "b0c14c816c6178ae3dfca336fa15bfc9f4ec44e8"
 }
