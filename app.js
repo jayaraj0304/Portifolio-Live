@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.setAttribute('data-id', project.id);
       
       const tagsHTML = project.tags.map(t => `<span class="project-tag">${t}</span>`).join('');
-      const imgPath = project.imageUrl || 'images/project-default.png';
+      const imgPath = project.imageUrl || 'images/project-default.webp';
 
       // Link setups
       let linksHTML = '';

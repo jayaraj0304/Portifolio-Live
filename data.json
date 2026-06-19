@@ -6,7 +6,7 @@
     "phone": "+91-9391217676",
     "location": "Hyderabad, India",
     "bio": "Passionate Computer Science student specializing in Data Science and Full Stack Development. Experienced in building AI-powered applications, machine learning workflows, and interactive web platforms. Dedicated to solving complex engineering problems and delivering modern, scalable solutions.",
-    "avatarUrl": "images/profile.png",
+    "avatarUrl": "images/profile.webp",
     "links": {
       "github": "https://github.com/jayaraj0304",
       "linkedin": "https://linkedin.com/in/jayaraj-thamatam",
@@ -95,7 +95,7 @@
       ],
       "githubUrl": "https://github.com/jayaraj0304/Ai-Recruiter-app",
       "liveUrl": "",
-      "imageUrl": "images/project-default.png"
+      "imageUrl": "images/project-default.webp"
     },
     {
       "id": "mysql-chat-ai",
@@ -109,7 +109,7 @@
       ],
       "githubUrl": "https://github.com/jayaraj0304",
       "liveUrl": "",
-      "imageUrl": "images/project-default.png"
+      "imageUrl": "images/project-default.webp"
     },
     {
       "id": "saarthi-doc-intel",
@@ -123,7 +123,7 @@
       ],
       "githubUrl": "https://github.com/jayaraj0304",
       "liveUrl": "",
-      "imageUrl": "images/project-default.png"
+      "imageUrl": "images/project-default.webp"
     },
     {
       "id": "ecogamify",
@@ -138,7 +138,7 @@
       ],
       "githubUrl": "https://github.com/jayaraj0304",
       "liveUrl": "",
-      "imageUrl": "images/project-default.png"
+      "imageUrl": "images/project-default.webp"
     }
   ],
   "achievements": [

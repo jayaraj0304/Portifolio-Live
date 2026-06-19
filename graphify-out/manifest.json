@@ -1,17 +1,17 @@
 {
   "admin.js": {
-    "mtime": 1781889977.1589122,
+    "mtime": 1781889998.637122,
     "ast_hash": "9e16062225d35d1ff86512c3994e7f33",
     "semantic_hash": ""
   },
   "app.js": {
-    "mtime": 1781889973.0806406,
-    "ast_hash": "b83a9fbd77cf1656d0f574e1e3e8e0c5",
+    "mtime": 1781891252.974543,
+    "ast_hash": "78afdebd378272aa41483d2838063359",
     "semantic_hash": ""
   },
   "data.json": {
-    "mtime": 1781889442.5745451,
-    "ast_hash": "21edf7298d25c2548b08a1a3406c0e8f",
+    "mtime": 1781891246.6560078,
+    "ast_hash": "e5e6c60053889ae6d5519ccee14fb084",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1781688821.5995448,
-    "ast_hash": "4bed6b122022dc3f489949f68360532d",
+    "mtime": 1781891227.9312644,
+    "ast_hash": "3c752ba4e6508453f79f65912d59beba",
     "semantic_hash": ""
   },
   "TP (2).pdf": {
@@ -39,14 +39,14 @@
     "ast_hash": "addc6151003b7eed13f72f57522da972",
     "semantic_hash": ""
   },
-  "images/profile.png": {
-    "mtime": 1781685668.2625737,
-    "ast_hash": "3bbbf91416694c655828bb4c690c6d6a",
+  "images/profile.webp": {
+    "mtime": 1781891218.1318834,
+    "ast_hash": "7330ee022ee3f2101b46949cf579c940",
     "semantic_hash": ""
   },
-  "images/project-default.png": {
-    "mtime": 1781685683.470029,
-    "ast_hash": "16bddaf98e3bc3f530a391df008f84eb",
+  "images/project-default.webp": {
+    "mtime": 1781891218.4000764,
+    "ast_hash": "770a6275f27da5c681594a2fcd280a0d",
     "semantic_hash": ""
   }
 }
