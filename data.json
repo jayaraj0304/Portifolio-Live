@@ -112,7 +112,7 @@
     },
     {
       "id": "saarthi-doc-intel",
-      "title": "Saarthi – Smart Document Intelligence Assistant",
+      "title": "Saarthi - Smart Document Intelligence Assistant",
       "description": "Engineered an AI document assistant with OCR, translation, summarization, and metadata extraction. Developed bilingual Q&A using LangChain and Gemini, automated workflows with n8n, and integrated low-latency semantic search using Supabase pgvector for efficient RAG.",
       "tags": [
         "AI/ML",
