@@ -269,35 +269,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 1. Personal details form listener
-  const personalForm = document.getElementById('personal-form');
-  if (personalForm) {
-    personalForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+  // Helper to save personal details from input fields to state
+  function savePersonalDetails() {
+    if (!portfolioData) return;
+    const nameEl = document.getElementById('edit-name');
+    const titleEl = document.getElementById('edit-title');
+    const emailEl = document.getElementById('edit-email');
+    const phoneEl = document.getElementById('edit-phone');
+    const locationEl = document.getElementById('edit-location');
+    const bioEl = document.getElementById('edit-bio');
+    const avatarEl = document.getElementById('edit-avatar');
+    
+    if (nameEl && titleEl && emailEl && phoneEl && locationEl && bioEl) {
       portfolioData.personal = {
-        name: document.getElementById('edit-name').value,
-        title: document.getElementById('edit-title').value,
-        email: document.getElementById('edit-email').value,
-        phone: document.getElementById('edit-phone').value,
-        location: document.getElementById('edit-location').value,
-        bio: document.getElementById('edit-bio').value,
-        avatarUrl: document.getElementById('edit-avatar').value,
+        name: nameEl.value,
+        title: titleEl.value,
+        email: emailEl.value,
+        phone: phoneEl.value,
+        location: locationEl.value,
+        bio: bioEl.value,
+        avatarUrl: avatarEl ? avatarEl.value : '',
         links: {
-          github: document.getElementById('edit-github').value,
-          linkedin: document.getElementById('edit-linkedin').value,
-          leetcode: document.getElementById('edit-leetcode').value
+          github: document.getElementById('edit-github') ? document.getElementById('edit-github').value : '',
+          linkedin: document.getElementById('edit-linkedin') ? document.getElementById('edit-linkedin').value : '',
+          leetcode: document.getElementById('edit-leetcode') ? document.getElementById('edit-leetcode').value : ''
         }
       };
-      updateSyncStatus(true);
-      alert('Personal details saved in local session!');
-    });
+    }
   }
 
-  // 2. Skills form listener
-  const skillsForm = document.getElementById('skills-form');
-  if (skillsForm) {
-    skillsForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+  // Helper to save skills from input fields to state
+  function saveSkills() {
+    if (!portfolioData) return;
+    if (document.getElementById('skills-programmingLanguages')) {
       portfolioData.skills = {
         programmingLanguages: parseCsvSkills('skills-programmingLanguages'),
         frameworksAndLibraries: parseCsvSkills('skills-frameworksAndLibraries'),
@@ -308,10 +312,31 @@ document.addEventListener('DOMContentLoaded', () => {
         academicCoursework: parseCsvSkills('skills-academicCoursework'),
         softSkills: parseCsvSkills('skills-softSkills')
       };
+    }
+  }
+
+  // 1. Personal details form listener
+  const personalForm = document.getElementById('personal-form');
+  if (personalForm) {
+    personalForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      savePersonalDetails();
+      updateSyncStatus(true);
+      alert('Personal details saved in local session!');
+    });
+  }
+
+  // 2. Skills form listener
+  const skillsForm = document.getElementById('skills-form');
+  if (skillsForm) {
+    skillsForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      saveSkills();
       updateSyncStatus(true);
       alert('Skills saved in local session!');
     });
   }
+
 
   function parseCsvSkills(id) {
     const input = document.getElementById(id);
@@ -600,6 +625,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (exportBtn) {
     exportBtn.addEventListener('click', () => {
       if (!portfolioData) return;
+      savePersonalDetails();
+      saveSkills();
       const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(portfolioData, null, 2));
       const downloadAnchor = document.createElement('a');
       downloadAnchor.setAttribute("href", dataStr);
@@ -625,8 +652,13 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('gh_token', token);
       githubConfig.token = token;
 
+      // Auto-compile current inputs into state before committing
+      savePersonalDetails();
+      saveSkills();
+
       ghCommitBtn.disabled = true;
       ghCommitBtn.textContent = 'Committing changes...';
+
 
       try {
         const owner = githubConfig.username;
