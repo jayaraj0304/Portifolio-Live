@@ -1,13 +1,18 @@
-# Graph Report - Portifilio  (2026-06-17)
+# Graph Report - Portifilio  (2026-06-19)
 
 ## Corpus Check
-- 5 files · ~6,435 words
+- 5 files · ~43,631 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 34 nodes · 47 edges · 7 communities (4 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `8adc0cef`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]

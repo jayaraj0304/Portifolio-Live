@@ -37,6 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
     ghTokenInput.value = githubConfig.token;
   }
 
+  // Save token to localStorage automatically when edited
+  if (ghTokenInput) {
+    ghTokenInput.addEventListener('input', () => {
+      const val = ghTokenInput.value.trim();
+      localStorage.setItem('gh_token', val);
+      githubConfig.token = val;
+    });
+  }
+
   // Authentication Flow
   if (loginForm) {
     loginForm.addEventListener('submit', async (e) => {
